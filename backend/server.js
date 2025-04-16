@@ -7,8 +7,9 @@ const app = express()
 
 //middleware
 app.use((req , res , next)=>{
-    console.log(req.path , req.method)   
-    next()
+    console.log('req.path :' ,req.path)   
+    console.log( 'req.method :',req.method)   
+    next();
 })
 
 //routes
